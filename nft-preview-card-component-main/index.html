@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: #0d1a2d;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 270px;
+        background-color: #15273f;
+        padding: 1em;
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.8em;
+        text-align: left;
+        line-height: 1.5;
+      }
+      .img {
+        position: relative;
+      }
+      .img:hover:after {
+        content: url(images/icon-view.svg);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: rgba(34, 245, 238, 0.671);
+        width: 100%;
+        height: 98%;
+        border-radius: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .pic {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.8em;
+        position: relative;
+      }
+      .header {
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        max-width: fit-content;
+      }
+      .header:hover {
+        cursor: pointer;
+        color: #22f5ef;
+      }
+      .p-desc {
+        font-size: 0.9rem;
+        color: #4a5f7b;
+      }
+      .details {
+        color: #4a5f7b;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+      .eth {
+        width: 35%;
+        color: #22f5ef;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .time {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .credit {
+        display: flex;
+        align-items: center;
+        color: #4a5f7b;
+        border-top: 1px solid #4a5f7b;
+        /* padding-top: 1rem; */
+      }
+      .credit img {
+        max-width: 2em;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 1rem;
+        height: auto;
+      }
+      span {
+        color: white;
+      }
+      span:hover {
+        cursor: pointer;
+        color: #22f5ef;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img class="pic" src="images/image-equilibrium.jpg" alt="qr-code" />
+      </div>
+      <div class="desc">
+        <h2 class="header">Equilibrium #3429</h2>
+        <p class="p-desc">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="details">
+          <div class="eth">
+            <img src="images/icon-ethereum.svg" alt="" /> 0.041 ETH
+          </div>
+          <div class="time">
+            <img src="images/icon-clock.svg" alt="" /> 3 days left
+          </div>
+        </div>
+        <div class="credit">
+          <img src="images/image-avatar.png" alt="avater" />
+          <p class="avtr-desc">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
