@@ -5,8 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-End Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Cairo", sans-serif;
+      }
+      body {
+        background-color: #b4d2ff;
+      }
+      .container {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      section h1 {
+        font-size: 1.4rem;
+      }
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+      p {
+        margin: 0;
+      }
+      .project-card {
+        background-color: white;
+        border-radius: 10px;
+        height: 18rem;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        align-items: flex-start;
+      }
+      .project-card:hover {
+        box-shadow: 4px 4px 6px 0px #00000082;
+        transform: translate(-2px, -2px);
+      }
+      .descr {
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+      .descr p {
+        font-weight: 800;
+      }
+      .descr a {
+        text-decoration: none;
+        color: black;
+      }
+      .descr a:hover {
+        text-decoration: underline;
+      }
+      #projects .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
+      }
+    </style>
   </head>
   <body>
-    <div><a href="./nft-preview-card-component-main/index.html">Link 1</a></div>
+    <header>
+      <div class="container">
+        <a href="https://www.frontendmentor.io">
+          <img
+            src="https://www.frontendmentor.io/static/images/logo-desktop.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h1>Completed Challages</h1>
+        <h3>Here is a list project I Completed:</h3>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="project-card">
+          <div class="image">
+            <img
+              src="./nft-preview-card-component-main/design/desktop-preview.jpg"
+              alt=""
+            />
+          </div>
+          <div class="descr">
+            <p>NFT Card Component</p>
+            <a href="./nft-preview-card-component-main/index.html">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="image">
+            <img
+              src="./qr-code-component-main/design/desktop-preview.jpg"
+              alt=""
+            />
+          </div>
+          <div class="descr">
+            <p>Qr Code Component</p>
+            <a href="./qr-code-component-main/index.html">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
