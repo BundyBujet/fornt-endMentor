@@ -4,7 +4,7 @@ This repository contains [Frontend Mentor](https://www.frontendmentor.io/challen
 
 Comment and suggestion can be send via [bundy.bujet](https://www.facebook.com/bundy.bujet).
 
-Main repository page [front-endMentor](https://github.com/BundyBujet/front-endMentor).
+Main projects showcase [front-endMentor](https://bundybujet.github.io/front-endMentor/).
 
 ## Projects
 
