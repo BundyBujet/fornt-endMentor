@@ -8,10 +8,11 @@ Main projects showcase [front-endMentor](https://bundybujet.github.io/front-endM
 
 ## Projects
 
-| No. | Project name                    | repo                                                                                                        |
-| --- | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 1   | nft-preview-card-component-main | [Github repo link](https://github.com/BundyBujet/front-endMentor/tree/main/nft-preview-card-component-main) |
-| 2   | qr-code-component-main          | [Github repo link](https://github.com/BundyBujet/front-endMentor/tree/main/qr-code-component-main)          |
+| No. | Project name                      | repo                                                                                                          |
+| --- | --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| 1   | nft-preview-card-component-main   | [Github repo link](https://github.com/BundyBujet/front-endMentor/tree/main/nft-preview-card-component-main)   |
+| 2   | qr-code-component-main            | [Github repo link](https://github.com/BundyBujet/front-endMentor/tree/main/qr-code-component-main)            |
+| 3   | stats-preview-card-component-main | [Github repo link](https://github.com/BundyBujet/front-endMentor/tree/main/stats-preview-card-component-main) |
 
 ---
 

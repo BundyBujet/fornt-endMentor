@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --bg-color: #0a0c1b;
+        --main-color: #1c1938;
+        --sec-color: #9961be;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        box-sizing: border-box;
+        background-color: var(--bg-color);
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      /*--------------- DeckTop View ---------------------*/
+      section .container {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 60%;
+        margin: auto;
+        margin-top: 7rem;
+        background-color: var(--main-color);
+        padding: 0;
+        border-radius: 5px;
+      }
+      section .container .image {
+        overflow: hidden;
+        position: relative;
+      }
+      section .container .overlay {
+        position: absolute;
+        width: 100%;
+        background: #5e009d94;
+        height: 100%;
+      }
+      section .container .image img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px 5px 5px 0px;
+      }
+      section .text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        padding: 3.2rem;
+        justify-content: space-between;
+      }
+      section .text .desc h2 {
+        width: 55%;
+        margin-bottom: 1rem;
+      }
+      section .text .desc p {
+        width: 56%;
+      }
+      section .text .desc span {
+        color: var(--sec-color);
+      }
+      section .text h2 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+      }
+      section .text p {
+        font-size: 0.7rem;
+        line-height: 1.6;
+      }
+      section .text .metrics {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+      /* -------------------phone View-------------------------- */
+      @media (max-width: 768px) {
+        section .container {
+          display: flex;
+          flex-direction: column;
+          max-width: 60%;
+          margin: auto;
+          margin-top: 7rem;
+          background-color: var(--main-color);
+          padding: 0;
+          max-width: 55%;
+          height: 100%;
+          border-radius: 5px;
+        }
+        section .container .image {
+          overflow: hidden;
+          position: relative;
+        }
+        section .container .overlay {
+          position: absolute;
+          width: 100%;
+          background: #5e009d94;
+          height: 100%;
+        }
+        section .container .image img {
+          max-width: 100%;
+          object-fit: cover;
+          height: auto;
+          border-radius: 5px 5px 0px 0px;
+        }
+        section .text {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          align-items: center;
+          padding: 1.2rem;
+        }
+
+        section .text .desc h2 {
+          width: 85%;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 1rem;
+        }
+        section .text .desc p {
+          margin-right: auto;
+          margin-left: auto;
+          width: 79%;
+        }
+        section .text .desc span {
+          color: var(--sec-color);
+        }
+        section .text h2 {
+          font-size: 1.3rem;
+          line-height: 1.4;
+        }
+        section .text p {
+          font-size: 0.7rem;
+          line-height: 1.6;
+        }
+        section .text .metrics {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 20px;
+          height: 180px;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="image">
+          <div class="overlay"></div>
+          <img src="./images/image-header-desktop.jpg" alt="meeting" />
+        </div>
+        <div class="text">
+          <div class="desc">
+            <h2>Get <span>insights</span> that help your business grow.</h2>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <div class="metrics">
+            <div class="met-1">
+              <h2>10k+</h2>
+              <p>Companies</p>
+            </div>
+            <div class="met-2">
+              <h2>314</h2>
+              <p>Templates</p>
+            </div>
+            <div class="met-3">
+              <h2>12M+</h2>
+              <p>Queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
