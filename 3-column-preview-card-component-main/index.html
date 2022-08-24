@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        max-width: 50rem;
+        margin: 5rem auto;
+      }
+      .container .card-1,
+      .container .card-2,
+      .container .card-3 {
+        padding: 3rem;
+        max-width: 100%;
+        color: white;
+        margin: auto;
+      }
+      .container .card-1 h2,
+      .container .card-2 h2,
+      .container .card-3 h2 {
+        text-transform: uppercase;
+      }
+      .container .card-1 p,
+      .container .card-2 p,
+      .container .card-3 p {
+        color: rgb(231, 231, 231);
+        line-height: 1.5;
+        max-width: 11rem;
+        margin-bottom: 3rem;
+      }
+      .container .card-1 {
+        border-radius: 5px 0px 0 5px;
+      }
+      .container .card-3 {
+        border-radius: 0 5px 5px 0;
+      }
+      @media (max-width: 786px) {
+        .container .card-1 {
+          border-radius: 5px 5px 0 0;
+        }
+        .container .card-3 {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+      .container .card-1 {
+        background-color: #e28525;
+      }
+      .container .card-2 {
+        background-color: #016972;
+      }
+      .container .card-3 {
+        background-color: #00403f;
+      }
+      .container button {
+        border: none;
+        padding: 1em 1.5em;
+        border-radius: 20px;
+        width: 10em;
+        font-weight: bolder;
+      }
+      .container .card-1 button {
+        color: #e28525;
+      }
+      .container .card-2 button {
+        color: #016972;
+      }
+      .container .card-3 button {
+        color: #00403f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-1">
+        <img src="./images/icon-sedans.svg" alt="" />
+        <h2>Sedans</h2>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="card-2">
+        <img src="./images/icon-suvs.svg" alt="" />
+        <h2>SUVs</h2>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="card-3">
+        <img src="./images/icon-luxury.svg" alt="" />
+        <h2>Luxury</h2>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
